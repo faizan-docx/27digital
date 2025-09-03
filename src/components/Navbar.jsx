@@ -59,7 +59,7 @@ function Navbar({
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-      </Menu>
+                  </Menu>
     </div>
   );
 }
