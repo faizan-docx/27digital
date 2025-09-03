@@ -3,18 +3,22 @@ import React from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { motion } from "motion/react";
-import { MapPreview } from "@/components/mapPreview";
+import FallingStarsBg from "@/components/ui/falling-stars-bg";
 
 export function HeroSection() {
   return (
     <div className="h-screen w-full px-8 bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
       
-      {/* Map as Background */}
+      {/* Falling Stars Background */}
       <div className="absolute inset-0 z-0">
-        <MapPreview />
+        <FallingStarsBg 
+          className="bg-neutral-950"
+          color="#FFF"
+          count={200}
+        />
       </div>
 
-      {/* Background Beams (layer above map) */}
+      {/* Background Beams (layer above stars) */}
       <div className="absolute inset-0 z-10">
         <BackgroundBeams />
       </div>

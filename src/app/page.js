@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import ParticleImageSplash from "@/components/ParticleImageSplash";
 
 export default function Page() {
-  redirect("/home");
+  return <ParticleImageSplash />;
 }
